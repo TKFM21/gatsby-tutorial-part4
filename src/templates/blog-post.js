@@ -13,8 +13,8 @@ export default ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query($slug: String!) {
@@ -26,4 +26,4 @@ export const query = graphql`
       excerpt
     }
   }
-`
+`;
